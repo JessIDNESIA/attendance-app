@@ -1,5 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:attendance/ui/home_screen.dart'; 
+
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,27 +42,3 @@ class TestApp extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(
-            height: 50, // Header
-            child: Placeholder(),
-          ),
-          Expanded(
-            child: Placeholder(), // Content
-          ),
-          SizedBox(
-            height: 50, // Footer
-            child: Placeholder(),
-          ),
-        ],
-      ),
-    );
-  }
-}
